@@ -71,99 +71,99 @@ public class JavaGuiClient extends Frame
          @Override
          public void actionPerformed(ActionEvent evt) {
 
-            try{
-              drawDistance.setText(serverConnect("n"));
-            }
-
-             catch(UnknownHostException e){
-
-            }catch(IOException e){
-
-            }
-         }
-      });
+	     try{
+		 drawDistance.setText(serverConnect("n"));
+	     }
+	     
+	     catch(UnknownHostException e){
+		 
+	     }catch(IOException e){
+		 
+		 }
+	 }
+	  });
       btn2.addActionListener(new ActionListener() {
-         @Override
-         public void actionPerformed(ActionEvent evt) {
-           try{
-             drawDistance.setText(serverConnect("s"));
-           }
-
-            catch(UnknownHostException e){
-
-           }catch(IOException e){
-
-           }
-         }
-      });
+	      @Override
+	      public void actionPerformed(ActionEvent evt) {
+		  try{
+		      drawDistance.setText(serverConnect("s"));
+		  }
+		  
+		  catch(UnknownHostException e){
+		      
+		  }catch(IOException e){
+		      
+		  }
+	      }
+	  });
       btn3.addActionListener(new ActionListener() {
-         @Override
-         public void actionPerformed(ActionEvent evt) {
-           try{
-             drawDistance.setText(serverConnect("e"));
-           }
-
-            catch(UnknownHostException e){
-
-           }catch(IOException e){
-
-           }
-         }
-      });
+	      @Override
+	      public void actionPerformed(ActionEvent evt) {
+		  try{
+		      drawDistance.setText(serverConnect("e"));
+		  }
+		  
+		  catch(UnknownHostException e){
+		      
+		  }catch(IOException e){
+		      
+		  }
+	      }
+	  });
       btn4.addActionListener(new ActionListener() {
-         @Override
-         public void actionPerformed(ActionEvent evt) {
-           try{
-             drawDistance.setText(serverConnect("w"));
-           }
-
-            catch(UnknownHostException e){
-
-           }catch(IOException e){
-
-           }
-         }
-      });
+	      @Override
+	      public void actionPerformed(ActionEvent evt) {
+		  try{
+		      drawDistance.setText(serverConnect("w"));
+		  }
+		  
+		  catch(UnknownHostException e){
+		      
+		  }catch(IOException e){
+		      
+		  }
+	      }
+	  });
       btn5.addActionListener(new ActionListener() {
-         @Override
-         public void actionPerformed(ActionEvent evt) {
-           try{
-             drawDistance.setText(serverConnect("d"));
-           }
-
-            catch(UnknownHostException e){
-
-           }catch(IOException e){
-
-           }
-         }
-      });
+	      @Override
+	      public void actionPerformed(ActionEvent evt) {
+		  try{
+		      drawDistance.setText(serverConnect("d"));
+		  }
+		  
+		  catch(UnknownHostException e){
+		      
+		  }catch(IOException e){
+		      
+		  }
+	      }
+	  });
       btn6.addActionListener(new ActionListener() {
-         @Override
-         public void actionPerformed(ActionEvent evt) {
-           try{
-             drawDistance.setText(serverConnect("u"));
-           }
-
-            catch(UnknownHostException e){
-
-           }catch(IOException e){
-
-           }
-         }
-      });
-
+	      @Override
+	      public void actionPerformed(ActionEvent evt) {
+		  try{
+		      drawDistance.setText(serverConnect("u"));
+		  }
+		  
+		  catch(UnknownHostException e){
+		      
+		  }catch(IOException e){
+		      
+		  }
+	      }
+	  });
+      
       /*
-      add(new Label("\nResponse: "));   // contruct the label "Response"
-      response = new TextField(" "); // Construct the TextField
-      response.setColumns(60);
-      add(response);
+	add(new Label("\nResponse: "));   // contruct the label "Response"
+	response = new TextField(" "); // Construct the TextField
+	response.setColumns(60);
+	add(response);
       */
-
+      
       //listen to window events
       addWindowListener(this);
-
-
+	  
+	  
 
 
    }
@@ -212,6 +212,7 @@ public class JavaGuiClient extends Frame
     catch(UnknownHostException e){}
     catch(IOException e){}
 
+    
     return not_a_valid_return;
     }
 
